@@ -1,5 +1,5 @@
 window.onload = function () {
-  fetch("https://tuitionvault.onrender.com");
+  fetch("http://127.0.0.1:8000/");
 };
 
 document.addEventListener("DOMContentLoaded", () => {
