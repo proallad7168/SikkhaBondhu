@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Fetch reviews for the post
-        fetch(`https://tuitionvault.onrender.com/reviews/view-reviews/${post.id}/`)
+        fetch(`http://127.0.0.1:8000/reviews/view-reviews/${post.id}/`)
             .then(response => response.json())
             .then(reviews => {
                 // Sort reviews by the reviewed date (most recent first)
@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function applyForTuition(postId) {
-        fetch(`https://tuitionvault.onrender.com/tutions/apply/${postId}/`, {
+        fetch(`http://127.0.0.1:8000/tutions/apply/${postId}/`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const postId = getPostIdFromUrl();
     if (postId) {
-        fetch(`https://tuitionvault.onrender.com/tutions/posts_details/${postId}`)
+        fetch(`http://127.0.0.1:8000/tutions/posts_details/${postId}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error("Failed to fetch tuition details");
