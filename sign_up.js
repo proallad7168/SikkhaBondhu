@@ -39,7 +39,7 @@ const handleSignUp = (event) => {
     }
 
     // Send registration data to the backend
-    fetch("https://tuitionvault.onrender.com/accounts/register/", {
+    fetch("http://127.0.0.1:8000/accounts/register/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(info),
