@@ -44,6 +44,6 @@ const showError = (message) => {
 
 // Function to auto-fill demo login credentials
 const demoLogin = () => {
-    document.getElementById("username").value = "Durjoy188";
-    document.getElementById("password").value = "DK*#1234*#";
+    document.getElementById("username").value = "Prollad168";
+    document.getElementById("password").value = "P@ssw0rd9!";
 };
